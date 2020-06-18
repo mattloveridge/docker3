@@ -1,2 +1,4 @@
-FROM store/oracle/serverjre:8
-run echo "hello"
+docker build -<<EOF
+FROM busybox
+RUN echo "hello world"
+EOF
